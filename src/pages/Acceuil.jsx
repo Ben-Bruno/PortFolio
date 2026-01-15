@@ -13,7 +13,6 @@ const Acceuil = () => {
         <div style={{ height: '120vh', width: '100vw', overflowX: 'hidden' }}>
             <AppBar />
             <Bouton />
-            <HomePage />
             <Footer />
         </div>
     );
