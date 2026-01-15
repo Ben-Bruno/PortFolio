@@ -1,6 +1,6 @@
 //cspell:disable
 import { Link } from "react-router-dom";
-import logoK from "../assets/img/logoK.png";
+import logoK from "../assets/images/bruno.png";
 
 const AppBar = () => {
     return (
@@ -9,7 +9,7 @@ const AppBar = () => {
                 <header className="d-flex justify-content-between align-items-center p-3">
                     <div className="logo d-flex align-items-center">
                         <Link to="/acceuil" className="text-decoration-none me-3" style={{ color: 'inherit' }}>
-                            <i className="fas fa-home fa-2x me-2"></i> PLATEFORME DU NIRD
+                            <i className="fas fa-home fa-2x me-2"></i> PORTFOLIO DE BEN Bruno
                         </Link>
                         {/* Logo rotatif */}
                         <img
@@ -32,7 +32,7 @@ const AppBar = () => {
                             }}
                         />
                     </div>
-                    <p className="fw-bold">ASTRASCRIPTUM</p>
+                    <p className="fw-bold">BEN BRUNO</p>
                 </header>
 
                 {/* Styles fusionnés */}

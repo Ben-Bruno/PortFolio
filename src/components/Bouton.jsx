@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import { useAuth } from "../auth/AuthContext";
 
 const Bouton = () => {
   useEffect(() => {
@@ -11,25 +10,21 @@ const Bouton = () => {
   const navigate = useNavigate();
 
   const seConnecter = () => {
-    navigate("/authentification");
+    navigate("");
   };
   const faq = () => {
-    navigate("/faq");
+    navigate("/");
   }
   const about = () => {
-    navigate("/about");
+    navigate("/");
   }
   const savoirPlus = () => {
-    navigate("/savoirPlus");
+    navigate("/");
   }
 
-  const { isAuthenticated, logout } = useAuth();
   // const navigate = useNavigate();
 
-  const handleLogout = () => {
-    logout();
-    navigate("/acceuil");
-  };
+
 
   return (
     <div className="contenant">
@@ -69,40 +64,40 @@ const Bouton = () => {
       </div>
 
       <div className="bouton-droite">
-        {isAuthenticated ? (
+        (
+        <button
+          type="button"
+          className="btn btn-secondary anim"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          data-bs-title="Se deconnecter"
+
+          style={{
+            borderRadius: "999px",
+            padding: "10px 24px",
+            border: "none",
+            backgroundColor: "#ff5a1f",
+            color: "#fff",
+            fontWeight: "bold",
+            cursor: "pointer",
+          }}
+        >
+          Se déconnecter
+        </button>
+        ) : (
+        <NavLink to="/connexion">
           <button
             type="button"
             className="btn btn-secondary anim"
             data-bs-toggle="tooltip"
             data-bs-placement="left"
-            data-bs-title="Se deconnecter"
-            onClick={handleLogout}
-            style={{
-              borderRadius: "999px",
-              padding: "10px 24px",
-              border: "none",
-              backgroundColor: "#ff5a1f",
-              color: "#fff",
-              fontWeight: "bold",
-              cursor: "pointer",
-            }}
+            data-bs-title="Se connecter"
+            onClick={seConnecter}
           >
-            Se déconnecter
+            Se connecter
           </button>
-        ) : (
-          <NavLink to="/connexion">
-            <button
-              type="button"
-              className="btn btn-secondary anim"
-              data-bs-toggle="tooltip"
-              data-bs-placement="left"
-              data-bs-title="Se connecter"
-              onClick={seConnecter}
-            >
-              Se connecter
-            </button>
-          </NavLink>
-        )}
+        </NavLink>
+        )
       </div>
     </div>
   );
