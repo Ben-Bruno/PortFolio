@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import AppBar from "../components/AppBar";
 import Bouton from "../components/Bouton";
 import Footer from "../components/Footer";
-import HomePage from "../components/HomePage";
 
 
 
