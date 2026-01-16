@@ -1,5 +1,6 @@
 //cspell:disable
 import { Link } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
 import logoK from "../assets/images/bruno.png";
 
 const AppBar = () => {
