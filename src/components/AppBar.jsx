@@ -12,25 +12,8 @@ const AppBar = () => {
                             <i className="fas fa-home fa-2x me-2"></i> PORTFOLIO DE BEN Bruno
                         </Link>
                         {/* Logo rotatif */}
-                        <img
-                            src={logoK}
-                            alt="Logo NIRD rotatif"
-                            style={{
-                                width: "60px",
-                                height: "60px",
-                                animation: "spin 5s linear infinite"
-                            }}
-                        />
-                        {/* Logo vertical */}
-                        <img
-                            src={logoK}
-                            alt="Logo NIRD vertical"
-                            style={{
-                                width: "60px",
-                                height: "60px",
-                                animation: "upDown 2s ease-in-out infinite"
-                            }}
-                        />
+                        
+                      
                     </div>
                     <p className="fw-bold">BEN BRUNO</p>
                 </header>

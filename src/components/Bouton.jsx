@@ -9,8 +9,11 @@ const Bouton = () => {
   }, []);
   const navigate = useNavigate();
 
-  const seConnecter = () => {
-    navigate("");
+  const seConnectergithub = () => {
+    navigate("https://github.com/Ben-Bruno/");
+  };
+   const seConnecterlkd = () => {
+    navigate("https://www.linkedin.com/in/bruno-bengono");
   };
   const faq = () => {
     navigate("/");
@@ -59,45 +62,38 @@ const Bouton = () => {
           data-bs-title="A propos des développeurs"
           onClick={about}
         >
-          A propos des développeurs
+          A propos du développeur
         </button>
       </div>
 
       <div className="bouton-droite">
-        (
-        <button
-          type="button"
-          className="btn btn-secondary anim"
-          data-bs-toggle="tooltip"
-          data-bs-placement="left"
-          data-bs-title="Se deconnecter"
 
-          style={{
-            borderRadius: "999px",
-            padding: "10px 24px",
-            border: "none",
-            backgroundColor: "#ff5a1f",
-            color: "#fff",
-            fontWeight: "bold",
-            cursor: "pointer",
-          }}
-        >
-          Se déconnecter
-        </button>
-        ) : (
-        <NavLink to="/connexion">
+        <NavLink to="/">
           <button
             type="button"
             className="btn btn-secondary anim"
             data-bs-toggle="tooltip"
             data-bs-placement="left"
             data-bs-title="Se connecter"
-            onClick={seConnecter}
+            onClick={seConnecterlkd}
           >
-            Se connecter
+            linkedin
           </button>
         </NavLink>
-        )
+
+        <NavLink to="/">
+          <button
+            type="button"
+            className="btn btn-secondary anim"
+            data-bs-toggle="tooltip"
+            data-bs-placement="left"
+            data-bs-title="Se connecter"
+            onClick={seConnectergithub}
+          >
+            GitHub
+          </button>
+        </NavLink>
+
       </div>
     </div>
   );
