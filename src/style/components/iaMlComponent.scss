@@ -1,0 +1,89 @@
+.text-orange {
+    color: #F15927;
+}
+
+.mb-4 {
+    color: #F15927;
+
+}
+
+.mb-3 {
+    color: #F15927;
+
+}
+
+.animate-card {
+    animation: fadeUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.animate-card.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.animate-card.delay-2 {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TITRE */
+.text-orange {
+    color: #ff8c00;
+}
+
+/* ANIMATION SCROLL */
+.animate-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+}
+
+.animate-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* DÉLAIS */
+.animate-card.delay-1 {
+    transition-delay: 0.2s;
+}
+
+.animate-card.delay-2 {
+    transition-delay: 0.4s;
+}
+
+/* HOVER CARD */
+.animate-card .card {
+    transition: all 0.4s ease;
+}
+
+.animate-card:hover .card {
+    transform: scale(1.07);
+    background-color: #000;
+    color: #fff;
+}
+
+/* TEXTE LISIBLE AU SURVOL */
+.animate-card:hover .card h4,
+.animate-card:hover .card p,
+.animate-card:hover .card li,
+.animate-card:hover .card span {
+    color: #fff;
+}
+
+/* BADGES */
+.animate-card:hover .badge {
+    background-color: #ff8c00 !important;
+    color: #000;
+}

@@ -12,7 +12,7 @@ const Bouton = () => {
   const seConnectergithub = () => {
     navigate("https://github.com/Ben-Bruno/");
   };
-   const seConnecterlkd = () => {
+  const seConnecterlkd = () => {
     navigate("https://www.linkedin.com/in/bruno-bengono");
   };
   const faq = () => {
