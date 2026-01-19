@@ -8,15 +8,28 @@ const AppBar = () => {
         <div className="conteneur">
             <div className="appbar">
                 <header className="d-flex justify-content-between align-items-center p-3">
-                    <div className="logo d-flex align-items-center">
-                        <Link to="/acceuil" className="text-decoration-none me-3" style={{ color: 'inherit' }}>
-                            <i className="fas fa-home fa-2x me-2"></i> PORTFOLIO DE BEN Bruno
-                        </Link>
-                        {/* Logo rotatif */}
-                        
-                      
-                    </div>
-                    <p className="fw-bold">BEN BRUNO</p>
+                  
+                        <div className="logo d-flex align-items-center">
+                            <Link to="/acceuil" className="text-decoration-none me-3" style={{ color: 'inherit' }}>
+                                <i className="fas fa-home fa-2x me-2"></i> PORTFOLIO DE BEN Bruno
+                            </Link>
+                            {/* Logo rotatif */}
+                            <div className="contact-container">
+                                {/* Lien vers l'e-mail */}
+                                <a href="mailto:bengonob@3il.fr">
+                                    bengonob@3il.fr
+                                </a><i className="fas fa-book me-2"></i>
+
+
+
+                                {/* Lien vers le téléphone */}
+                                <a href="tel:+33773217998">
+                                    +33773217998
+                                </a><i className="fas fa-phone me-2"></i>
+                            </div>
+
+                        </div>
+                   
                 </header>
 
                 {/* Styles fusionnés */}
